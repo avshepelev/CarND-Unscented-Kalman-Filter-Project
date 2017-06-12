@@ -119,7 +119,7 @@ public:
 
   void AugmentedSigmaPoints(MatrixXd &Xsig_aug, MatrixXd &P, VectorXd &x);
 
-  void SigmaPointPrediction(MatrixXd &Xsig_pred, MatrixXd &Xsig_aug, double delta_t);
+  void SigmaPointPrediction(MatrixXd* Xsig_out, MatrixXd &Xsig_aug, double delta_t);
 
   void PredictMeanAndCovariance(VectorXd &x, MatrixXd &P);
 
